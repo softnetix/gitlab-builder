@@ -26,4 +26,6 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
 # Define additional metadata for our image.
 VOLUME /var/lib/docker
 
-CMD ["wrapdocker"]
+ENTRYPOINT ["wrapdocker"]
+
+CMD []
